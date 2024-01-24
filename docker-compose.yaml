@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  
+  app:
+    build: .
+    container_name: repository_app
+    volumes:
+      - .:/usr/src/app
+      - node_modules:/usr/src/app/node_modules/
+
+volumes:
+  node_modules:
