@@ -6,7 +6,7 @@ import Customer from "../entity/customer";
 import Address from "../valueObject/address";
 
 describe("Customer created event tests", () => {
-    it("should notify the event handlers of the creation of a product", () => {
+    it("should notify the event handlers of the creation of a customer", () => {
         const eventDispatcher = new EventDispatcher();
         const eventHandler1 = new SendConsoleLog1Handler();
         const eventHandler2 = new SendConsoleLog2Handler();
